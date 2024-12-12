@@ -1,22 +1,17 @@
-//
-// function ValidPassword(){
-//     return <h1>togri parol</h1>
-// }
-// function InvalidPassword(){
-//     return <h1>notugri parol</h1>
-// }
-//
-// const Password=({isValid})=>{
-//     return (isValid) ?  <ValidPassword/>: <InvalidPassword/>
-// }
-import UserStatus from  './components/UserStatus.jsx'
-// import Weather from './components/Weather.jsx'
-import Greeting from './components/Greeting.jsx'
-export const App=()=>{
-    return(
-        // <Password isValid={true}/>
-        // <Weather temperature={-9}/>
-        // <UserStatus logIn={true} isAdmin={true} />
-        <Greeting timeOfDay={'morning'}/>
+import React from 'react'
+import './index.css'
+import {PiAlienThin, PiAndroidLogoDuotone} from 'react-icons/pi'
+import {DiAndroid} from "react-icons/di";
+const App = () => {
+    const dizayn = {color:'red', textAlign:'center'}
+    return (
+        <>
+            <h1 style={dizayn}>Hello World
+                <PiAlienThin/>
+                <PiAndroidLogoDuotone />
+                <DiAndroid />
+            </h1>
+        </>
     )
 }
+export default App
